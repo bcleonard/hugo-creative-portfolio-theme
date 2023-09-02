@@ -1,4 +1,9 @@
 <p class="social social--big">
+  {{ with .Site.Params.social.tiktok }}
+  <a href="{{ . }}" class="tiktok" title="TikTok" rel="me">
+    <i class="fa fa-video-camera"></i>
+  </a>
+  {{end}}
   {{ with .Site.Params.social.facebook }}
   <a href="{{ . }}" class="facebook" title="Facebook" rel="me">
     <i class="fa fa-facebook"></i>
